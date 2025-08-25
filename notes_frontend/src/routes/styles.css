@@ -1,37 +1,13 @@
-/**
- * Ultralight template styles - minimal and clean
- */
-
-.page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
+/* Route-level styles can be kept minimal as most UI is themed globally */
+:root {
+  /* No overrides here; reserved for route-scoped customizations if needed */
 }
 
-.main-title {
-  font-size: 3rem;
-  font-weight: 300;
-  text-align: center;
-  color: var(--primary-color);
-  margin: 0;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 2rem;
-  }
-  
-  .page-container {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-title {
-    font-size: 1.5rem;
-  }
+/* Accessibility helpers */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 1px, 1px);
+  white-space: nowrap; border: 0;
 }
